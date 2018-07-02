@@ -1,6 +1,15 @@
-# Docker container for OSSEC
+# Docker container for OSSEC Agent
+#### Wazuh flavor of OSSEC Agent
 
-An ossec-server image with the ability to separate the ossec configuration/data from the container. 
+```
+2018 VGS Info-Security team
+```
+
+An ossec-server image with the ability to separate the ossec configuration/data from the container.    
+
+
+Purpose: Run OSSEC Agents on Kubernetes nodes and ship alerts    
+to the central OSSEC service    
 
 ## Documentation
 
@@ -16,3 +25,4 @@ This Docker container is based on “xetus-oss” dockerfiles, which can be foun
 
 * [Wazuh website](http://wazuh.com)
 * [OSSEC project website](http://ossec.github.io)
+---
