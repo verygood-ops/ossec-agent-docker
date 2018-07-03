@@ -14,6 +14,9 @@ RUN apt-key adv --fetch-keys http://ossec.wazuh.com/repos/apt/conf/ossec-key.gpg
 # Add a default agent due to this bug
 # https://groups.google.com/forum/#!topic/ossec-list/qeC_h3EZCxQ
 ADD default_agent /var/ossec/default_agent
+
+ADD client.keys /var/ossec/etc/client.keys
+
 RUN service ossec restart &&\
   /var/ossec/bin/manage_agents -f /default_agent &&\
   rm /var/ossec/default_agent &&\
